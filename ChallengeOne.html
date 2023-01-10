@@ -23,19 +23,29 @@
         saltarLinea();
     }
 
-    var cod = ['a', 'e', 'i', 'o', 'u'];
-    var letraCodificada = ['ai', 'enter', 'imes', 'ober', 'ufat'];
-    var palabra = Array.from(prompt("Intrpduzca la palabra a encriptar: ")); 
-    var palabraCodificada = [];
+    var palabra = Array.from(prompt("Intrpduzca la palabra a encriptar: "));
 
     var i = 0; //Inicializar bucle
 
     imprimir(palabra);
 
     for(i; i<palabra.length; i++){
-        if(palabra[i] == cod[0]){
-            palabra[i] = letraCodificada[0];
-            
+        switch(palabra[i]){
+            case 'a':
+                palabra[i] = 'ai';
+                break
+            case 'e':
+                palabra[i] = 'enter';
+                break
+            case 'i':
+                palabra[i] = 'imes';
+                break
+            case 'o':
+                palabra[i] = 'ober';
+                break
+            case 'u':
+                palabra[i] = 'ufat';
+                break
         }
     }
 
