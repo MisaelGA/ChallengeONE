@@ -1,6 +1,11 @@
+function imprimir(entrada){
+    var salida = document.getElementById("salida");
+    var salidaED = entrada;
+    salida.value = salidaED;
+}
+
 function encriptar(){
     var palabra = Array.from(document.getElementById("textoEncriptar").value);
-    var salida = document.getElementById("salida");
 
     var i = 0; //Inicializar bucle
 
@@ -24,7 +29,16 @@ function encriptar(){
         }
     }
 
-    var salidaEncriptada = palabra.join('');
-    salida.value = (salidaEncriptada);
+    var palabraEncriptada = palabra.join('');
+    imprimir(palabraEncriptada);
+}
+
+function descencriptar(){
+    var palabra = document.getElementById("textoDescencriptar").value;
+
+    while(palabra.includes("ai")){
+        palabra = palabra.replace("ai","a")
+    }
     
+    imprimir(palabra);
 }
