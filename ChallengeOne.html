@@ -7,49 +7,16 @@
     <title>Challenge ONE</title>
 </head>
 <body>
-    
+    <script src="ED.js"></script>
+    <form action="">
+        <div>
+            <label for="textoEncriptar">Escribre el Texto a texto a Encriptar</label>
+            <input type="text" id="textoEncriptar">
+        </div>
+        <div>
+            <input type="button" value="encriptar" onclick="encriptar()"><br><br>
+            <input type="text" id="salida">
+        </div>
+    </form>
 </body>
 </html>
-
-<script>
-    function saltarLinea(){
-        document.write("<br>");
-        document.write("<br>");
-    }
-
-    function imprimir(frase){
-        saltarLinea();
-        document.write(frase);
-        saltarLinea();
-    }
-
-    var palabra = Array.from(prompt("Intrpduzca la palabra a encriptar: "));
-
-    var i = 0; //Inicializar bucle
-
-    imprimir(palabra);
-
-    for(i; i<palabra.length; i++){
-        switch(palabra[i]){
-            case 'a':
-                palabra[i] = 'ai';
-                break
-            case 'e':
-                palabra[i] = 'enter';
-                break
-            case 'i':
-                palabra[i] = 'imes';
-                break
-            case 'o':
-                palabra[i] = 'ober';
-                break
-            case 'u':
-                palabra[i] = 'ufat';
-                break
-        }
-    }
-
-    imprimir(palabra);
-
-
-</script>
