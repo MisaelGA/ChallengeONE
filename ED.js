@@ -36,9 +36,13 @@ function encriptar(){
 function descencriptar(){
     var palabra = document.getElementById("textoDescencriptar").value;
 
-    while(palabra.includes("ai")){
-        palabra = palabra.replace("ai","a")
+    var claves = ['ai', 'enter', 'imes', 'ober', 'ufat'];
+    var desc = ['a', 'e', 'i', 'o', 'u'];
+
+    for(var i = 0; i < claves.length; i++){
+        palabra = palabra.replaceAll(claves[i],desc[i]);
     }
     
     imprimir(palabra);
 }
+
