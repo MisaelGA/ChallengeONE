@@ -47,8 +47,8 @@ function descencriptar(){
 }
 
 function copiarPortapapeles(){
-    document.querySelector('.copiar').addEventListener('click',function(){
-        let copyText = document.querySelector('.textoCopiado').value;
-        navigator.clipboard.writeText(copyText).then(()=>{ alert('')});
-    });   
+
+    var contenido = document.querySelector('.textoCopiado').value;
+    navigator.clipboard.writeText(contenido); 
+    alert("Copiado en Portapapeles");  
 } 
