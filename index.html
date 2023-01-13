@@ -5,20 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge ONE</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <script src="ED.js"></script>
     <form action="">
-        <div>
-            <label for="texto">Escribre el Texto a texto a Encriptar / Desencriptar</label>
+
+        <div class="textArea">
+            <label for="texto">Ingrese el texto aqui</label>
             <input type="text" id="texto">
         </div>
-        <div>
-            <input type="button" value="Encriptar" onclick="encriptar()">
-            <input type="button" value="Desencriptar" onclick="desencriptar()">
+
+        <div class="areaSalida">
             <input type="text" id="salida" class="textoCopiado">
+        </div>
+
+        <div class="botones">
+            <input type="button" value="Encriptar!" class="bEncriptar" onclick="encriptar()">
+            <input type="button" value="Desencriptar!" onclick="desencriptar()">
             <input type="button" value="Copiar" class="copiar" id="botonCopiar" onclick="copiarPortapapeles()">
         </div>
+
     </form>
 </body>
 </html>
