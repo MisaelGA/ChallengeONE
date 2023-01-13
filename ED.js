@@ -33,8 +33,8 @@ function encriptar(){
     imprimir(palabraEncriptada);
 }
 
-function descencriptar(){
-    var palabra = document.getElementById("textoDescencriptar").value;
+function desencriptar(){
+    var palabra = document.getElementById("textoDesencriptar").value;
 
     var claves = ['ai', 'enter', 'imes', 'ober', 'ufat'];
     var desc = ['a', 'e', 'i', 'o', 'u'];
@@ -50,5 +50,4 @@ function copiarPortapapeles(){
 
     var contenido = document.querySelector('.textoCopiado').value;
     navigator.clipboard.writeText(contenido); 
-    alert("Copiado en Portapapeles");  
 } 
