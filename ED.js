@@ -46,3 +46,9 @@ function descencriptar(){
     imprimir(palabra);
 }
 
+function copiarPortapapeles(){
+    document.querySelector('.copiar').addEventListener('click',function(){
+        let copyText = document.querySelector('.textoCopiado').value;
+        navigator.clipboard.writeText(copyText).then(()=>{ alert('')});
+    });   
+} 
