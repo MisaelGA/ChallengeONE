@@ -5,7 +5,7 @@ function imprimir(entrada){
 }
 
 function encriptar(){
-    var palabra = Array.from(document.getElementById("textoEncriptar").value);
+    var palabra = Array.from(document.getElementById("texto").value);
 
     var i = 0; //Inicializar bucle
 
@@ -34,7 +34,7 @@ function encriptar(){
 }
 
 function desencriptar(){
-    var palabra = document.getElementById("textoDesencriptar").value;
+    var palabra = document.getElementById("texto").value;
 
     var claves = ['ai', 'enter', 'imes', 'ober', 'ufat'];
     var desc = ['a', 'e', 'i', 'o', 'u'];
