@@ -2,6 +2,9 @@ function imprimir(entrada){
     var salida = document.getElementById("salida");
     var salidaED = entrada;
     salida.value = salidaED;
+    document.getElementById("imgDer").style.display= "none";
+    document.getElementById("text1").style.display= "none";
+    document.getElementById("text2").style.display= "none";
 }
 
 function encriptar(){
